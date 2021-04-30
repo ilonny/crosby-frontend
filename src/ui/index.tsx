@@ -2,3 +2,8 @@ export * from "./Container";
 export * from "./BreadcrumbsUI";
 export * from "./Row";
 export * from "./ItemGalleryUI";
+export * from "./PageTitle";
+export * from "./Price";
+export * from "./CartControls";
+export * from "./CustomButton";
+export * from "./ItemDescriptionText";

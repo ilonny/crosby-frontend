@@ -1,7 +1,8 @@
 import {
     MainLayout,
     Breadcrumbs,
-    ItemGallery
+    ItemGallery,
+    ItemDescription
 } from "../../features";
 import {
     Container,
@@ -14,6 +15,7 @@ export const ItemScreen = () => {
                 <Breadcrumbs />
                 <Row>
                     <ItemGallery />
+                    <ItemDescription />
                 </Row>
             </Container>
         </MainLayout>

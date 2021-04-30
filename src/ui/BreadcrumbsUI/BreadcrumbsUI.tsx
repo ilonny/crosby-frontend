@@ -15,6 +15,6 @@ export const BreadcrumbsUI = (props: TPops) => {
 }
 
 const BreadcrumbsStyled = styled.p`
-    margin: 20px 0;
+    margin: 30px 0;
     color: #949494;
 `
