@@ -1,8 +1,14 @@
-import { MainLayout } from "../../features";
+import {
+    MainLayout,
+    Breadcrumbs
+} from "../../features";
+import { Container } from "../../ui";
 export const ItemScreen = () => {
     return (
         <MainLayout>
-            <p>Item Screen</p>
+            <Container>
+                <Breadcrumbs/>
+            </Container>
         </MainLayout>
     )
 }
