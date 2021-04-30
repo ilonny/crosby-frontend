@@ -47,6 +47,7 @@
   },
   "devDependencies": {
     "@types/react-router-config": "^5.0.2",
+    "@types/styled-components": "^5.1.9",
     "gh-pages": "^2.2.0",
     "node-sass": "^4.14.1",
     "redux-logger": "^3.0.6"
