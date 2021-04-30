@@ -1,13 +1,20 @@
 import {
     MainLayout,
-    Breadcrumbs
+    Breadcrumbs,
+    ItemGallery
 } from "../../features";
-import { Container } from "../../ui";
+import {
+    Container,
+    Row
+} from "../../ui";
 export const ItemScreen = () => {
     return (
         <MainLayout>
             <Container>
-                <Breadcrumbs/>
+                <Breadcrumbs />
+                <Row>
+                    <ItemGallery />
+                </Row>
             </Container>
         </MainLayout>
     )
