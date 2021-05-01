@@ -13,7 +13,7 @@ export const ItemScreen = () => {
         <MainLayout>
             <Container>
                 <Breadcrumbs />
-                <Row>
+                <Row mediaWrap="mobile">
                     <ItemGallery />
                     <ItemDescription />
                 </Row>

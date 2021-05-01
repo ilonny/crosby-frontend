@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Media } from "../../lib";
 type TProps = {
     // price: string | number
 }
@@ -13,7 +14,7 @@ export const CartControls = (props: TProps) => {
     )
 }
 
-const CartControlsStyled = styled.h4<TProps>`
+const CartControlsStyled = styled.div<TProps>`
     display: flex;
     align-items: center;
     & button {
@@ -37,6 +38,9 @@ const CartControlsStyled = styled.h4<TProps>`
         height: 47px;
         display: flex;
         align-items: center;
+        justify-content: center;
+    }
+    ${Media.mobile} {
         justify-content: center;
     }
 `

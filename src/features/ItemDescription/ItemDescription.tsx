@@ -1,3 +1,7 @@
+import styled from 'styled-components';
+import {
+    Media,
+} from "../../lib";
 import {
     PageTitle,
     Price,
@@ -19,16 +23,44 @@ export const ItemDescription = () => {
         <p>Доступно только для самовывоза</p>
     `;
     return (
-        <div style={{ paddingLeft: 50 }}>
+        <MainWrapper >
             <PageTitle>{itemTitle}</PageTitle>
-            <div style={{ marginTop: 26, marginBottom: 26 }}>
+            <PriceWrapper>
                 <Price price={price} />
-            </div>
+            </PriceWrapper>
             <CartControls />
-            <div style={{ height: 60 }} />
+            <DividerFirst />
             <CustomButton>ADD TO CART</CustomButton>
-            <div style={{ height: 20 }} />
+            <DividerSecond />
             <ItemDescriptionText html={desctiptionHtml} />
-        </div>
+        </MainWrapper>
     )
 }
+const MainWrapper = styled.div`
+    padding-left: 50px;
+    ${Media.mobile} {
+        padding-left: 0px;
+        margin-top: 30px;
+    }
+`
+
+const PriceWrapper = styled.div`
+    margin-top: 26px;
+    margin-bottom: 26px;
+    ${Media.mobile} {
+        margin-top: 13px;
+        margin-bottom: 26px;
+    }
+`
+const DividerFirst = styled.div`
+    height: 60px;
+    ${Media.mobile} {
+        height: 30px;
+    }
+`
+const DividerSecond = styled.div`
+    height: 20px;
+    ${Media.mobile} {
+        height: 0px;
+    }
+`

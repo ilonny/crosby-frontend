@@ -12,7 +12,7 @@ export const GlobalStyles = createGlobalStyle`
     height: 100vh;
     -webkit-font-smoothing: antialiased;
     color: #000;
-    background: #E5E5E5;
+    background: rgb(245, 245, 245);
   }
   a {
     color: inherit;

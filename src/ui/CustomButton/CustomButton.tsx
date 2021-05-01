@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Media } from "../../lib";
 type TProps = {
     // price: string | number
     children: any
@@ -23,5 +24,8 @@ const CustomButtonStyled = styled.button<TProps>`
     &:hover {
         text-decoration: underline;
     }
-
+    ${Media.mobile} {
+        padding: 0px 20px;
+        width: 100%;   
+    }
 `

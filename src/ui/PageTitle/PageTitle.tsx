@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Media } from "../../lib";
 type TProps = {
     children: string
     align?: 'center' | 'left' | 'right'
@@ -13,5 +14,10 @@ const PageTitleStyled = styled.h4<TProps>`
     text-transform: uppercase;
     font-family: Helvetica Neue, Helvetica;
     font-weight: 400;
-    text-align: ${props => props.align ? props.align : 'left'}
+    text-align: ${props => props.align ? props.align : 'left'};
+    ${Media.mobile} {
+        text-align: center;
+        font-size: 20px;
+        color: #031EE8;
+    }
 `
