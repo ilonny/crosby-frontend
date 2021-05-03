@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import { menuCategories } from "../../../lib";
 import { HeaderMenuItem, Row } from "../../../ui";
 export const HeaderMenu = () => {
@@ -13,8 +13,8 @@ export const HeaderMenu = () => {
     )
 }
 
-const HeaderMenuWrapper = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-`
+// const HeaderMenuWrapper = styled.div`
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// `
