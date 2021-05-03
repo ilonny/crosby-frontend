@@ -38,9 +38,10 @@ const HeaderMenuItemStyledWrapper = styled.div`
 `
 
 const HeaderMenuItemStyled = styled.a<TProps>`
+    white-space: nowrap;
     cursor: pointer;
     text-transform: uppercase;
-    padding: 10px;
+    padding: 10px 15px;
     font-size: 12px;
     transition: all 250ms ease;
     position: relative;

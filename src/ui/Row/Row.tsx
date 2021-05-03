@@ -7,7 +7,8 @@ type TProps = {
     align?: TFlexValues,
     wrap?: 'nowrap' | 'wrap',
     children: React.ReactNode | Element,
-    mediaWrap?: keyof typeof Media
+    mediaWrap?: keyof typeof Media,
+    flex?: any
 }
 
 export const Row = (props: TProps) => {
@@ -33,4 +34,10 @@ const RowStyled = styled.div<TProps>`
             `
         }
     }}
+    ${props => {
+        if (props.flex) {
+            return `flex: ${props.flex}`
+        }
+    }}
+
 `
