@@ -1,7 +1,12 @@
 import { ItemScreen } from "./ItemScreen";
-
+import { Link } from "react-router-dom";
 export const HomePage = () => {
-  return <p>Home page</p>
+  return (
+    <div>
+      <p>Home page</p>
+      <Link to={'/item'}>go to item</Link>
+    </div>
+  )
 }
 
 export const routes = () => [
@@ -14,5 +19,8 @@ export const routes = () => [
     path: "/item",
     exact: true,
     component: ItemScreen,
-  }
+  },
+  // {
+  //   component: HomePage,
+  // },
 ];
