@@ -1,13 +1,25 @@
 import React from 'react';
 import styled from 'styled-components';
+import {
+    HeaderMenu,
+    LogoRow
+} from "./templates";
 export const Header = () => {
-    return <HeaderStyled>header</HeaderStyled>
+    return (
+        <div>
+            <LogoRow />
+            <HeaderStyled>
+                <div ></div>
+                <HeaderMenu />
+                <div ></div>
+            </HeaderStyled>
+        </div>
+    )
 }
 
 const HeaderStyled = styled.header`
-    height: 200px;
-    background: gray;
     display: flex;
     align-items: center;
     justify-content: center;
+
 `

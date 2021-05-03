@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick-theme.css";
 import "./slider-custom.css";
 //@ts-ignore
 import Slider from "react-slick";
-import styled from 'styled-components';
+// import styled from 'styled-components';
 import { Item } from "./templates";
 import SliderArrowLeft from "../../assets/icons/slider_icon_left.png";
 import SliderArrowRight from "../../assets/icons/slider_icon_right.png";

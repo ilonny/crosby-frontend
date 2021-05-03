@@ -8,3 +8,4 @@ export * from "./CartControls";
 export * from "./CustomButton";
 export * from "./ItemDescriptionText";
 export * from "./ItemSlider";
+export * from "./HeaderMenuItem";

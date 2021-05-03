@@ -39,3 +39,52 @@ export const alsoItems = [
         image: Item2,
     },
 ];
+
+export const menuCategories = [
+    {
+        id: 1,
+        title: 'ВСЕ ТОВАРЫ',
+    },
+    {
+        id: 2,
+        title: 'свечи',
+    },
+    {
+        id: 3,
+        title: 'текстиль',
+        subcategories: [
+            {
+                id: 4,
+                title: 'Пледы',
+            },
+            {
+                id: 5,
+                title: 'Подушки',
+            },
+            {
+                id: 6,
+                title: 'Ковры',
+            },
+        ]
+    },
+    {
+        id: 7,
+        title: 'посуда',
+    },
+    {
+        id: 8,
+        title: 'Аксессуары',
+    },
+    {
+        id: 9,
+        title: 'Одежда',
+    },
+    {
+        id: 10,
+        title: 'Мебель',
+    },
+    {
+        id: 11,
+        title: 'Шоурум',
+    },
+]
