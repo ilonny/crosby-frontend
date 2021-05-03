@@ -1,3 +1,4 @@
+import styled from 'styled-components';
 import {
     MainLayout,
     Breadcrumbs,
@@ -6,8 +7,11 @@ import {
 } from "../../features";
 import {
     Container,
-    Row
+    Row,
+    PageTitle,
+    ItemSlider,
 } from "../../ui";
+import { alsoItems } from "../../lib";
 export const ItemScreen = () => {
     return (
         <MainLayout>
@@ -17,7 +21,17 @@ export const ItemScreen = () => {
                     <ItemGallery />
                     <ItemDescription />
                 </Row>
+                <ItemDivider />
+                <PageTitle
+                    align="center"
+                >С этим товаром также покупают</PageTitle>
+                <ItemDivider />
+                <ItemSlider items={alsoItems} />
+                <ItemDivider />
             </Container>
         </MainLayout>
     )
 }
+const ItemDivider = styled.div`
+height: 40px;
+`

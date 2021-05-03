@@ -11,7 +11,7 @@ import {
 } from "../../ui";
 export const ItemDescription = () => {
     const itemTitle = "Двусторонний плед";
-    const price = '25 900 руб';
+    const price = '25900';
     const desctiptionHtml = `
         <ul>
             <li>Нашивка с логотипом </li>
@@ -41,6 +41,7 @@ const MainWrapper = styled.div`
     ${Media.mobile} {
         padding-left: 0px;
         margin-top: 30px;
+        width: 100%;
     }
 `
 
