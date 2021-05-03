@@ -12,7 +12,12 @@ export const HeaderMenuItem: FC<TProps> = ({ item, bold }) => {
                 <ul>
                     {item?.subcategories?.map((subcategory: any) => {
                         return (
-                            <HeaderMenuItemStyled key={subcategory?.id} bold={false} item={subcategory}>{subcategory?.title}</HeaderMenuItemStyled>
+                            <HeaderMenuItemStyled
+                                key={subcategory?.id}
+                                bold={subcategory?.bold}
+                                item={subcategory}
+                            >{subcategory?.title}
+                            </HeaderMenuItemStyled>
                         )
                     })}
                 </ul>

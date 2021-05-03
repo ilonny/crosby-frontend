@@ -6,8 +6,9 @@ export const HeaderMenuIcon = ({ children }: any) => {
 }
 
 const HeaderMenuIconStyled = styled.div`
-    // width: 14px;
-    // height: 14px;
+    min-width: 14px;
+    min-height: 14px;
+    max-height: 16px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,7 +16,9 @@ const HeaderMenuIconStyled = styled.div`
     margin-left: 18px;
     & img, & svg {
         width: 100%;
-        height: 100%;
+        // height: 100%;
+        max-height: 16px;
         display: block;
+        
     }
 `
