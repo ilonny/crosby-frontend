@@ -1,0 +1,7 @@
+.image-gallery-left-nav .image-gallery-svg, .image-gallery-right-nav .image-gallery-svg {
+    height: 48px;
+    width: 24px;
+}
+.image-gallery-thumbnail.active, .image-gallery-thumbnail:hover, .image-gallery-thumbnail:focus {
+    border: 1px solid #031EE8;
+}

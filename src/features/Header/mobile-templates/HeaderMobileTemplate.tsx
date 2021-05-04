@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styled from 'styled-components';
-
+import { Link } from "react-router-dom";
 import { Row } from "../../../ui";
 
 import MobileMenuOpenIcon from "../../../assets/icons/mobile-menu-open.svg";
@@ -32,7 +32,7 @@ const HeaderMenuItem = ({ category }: any) => {
                 )}
             </MenuRow>
             {isOpen && (
-                <div style={{paddingBottom: 20}}>
+                <div style={{ paddingBottom: 20 }}>
                     {category?.subcategories?.map((subcategory: any) => {
                         return (
                             <MenuRowSub>{subcategory?.title}</MenuRowSub>
@@ -57,7 +57,9 @@ export const HeaderMobileTemplate = () => {
                     <OpenMenuButton onClick={() => setMenuOpened(true)}>
                         <img src={MobileMenuOpenIcon} alt="open menu" />
                     </OpenMenuButton>
-                    <Logo src={LogoIcon} alt="logo" />
+                    <Link to="/">
+                        <Logo src={LogoIcon} alt="logo" />
+                    </Link>
                     <OpenMenuButton>
                         <img src={MobileCartOpenIcon} alt="open cart" />
                     </OpenMenuButton>
@@ -80,7 +82,7 @@ export const HeaderMobileTemplate = () => {
                     )
                 })}
                 <BottomRow>
-                    <LangButton style={{textDecoration: 'underline'}}>RU</LangButton>
+                    <LangButton style={{ textDecoration: 'underline' }}>RU</LangButton>
                     <LangButton>EN</LangButton>
                 </BottomRow>
             </ModalContentWrapper>

@@ -4,6 +4,7 @@ import ReactImageMagnify from "react-image-magnify";
 import "react-image-gallery/styles/css/image-gallery.css";
 import styled from 'styled-components';
 import { Media } from "../../lib";
+import "./item-gallery-custom.css";
 export const ItemGalleryUI = (props: any) => {
     const { images } = props;
     const [isFullScreen, setIsFullScreen] = useState<boolean>(false);
