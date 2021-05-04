@@ -49,6 +49,12 @@ export const menuCategories = () => {
         {
             id: 2,
             title: 'свечи',
+            subcategories: [
+                {
+                    id: 14,
+                    title: 'свечи 2',
+                },
+            ]
         },
         {
             id: 3,
