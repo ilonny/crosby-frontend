@@ -10,3 +10,4 @@ export * from "./ItemDescriptionText";
 export * from "./ItemSlider";
 export * from "./HeaderMenuItem";
 export * from "./HeaderMenuIcon";
+export * from "./PageBanner";

@@ -8,7 +8,8 @@ import { Item } from "./templates";
 import SliderArrowLeft from "../../assets/icons/slider_icon_left.png";
 import SliderArrowRight from "../../assets/icons/slider_icon_right.png";
 type TProps = {
-    items: Array<any>
+    items: Array<any>;
+    wrapperStyle?: any;
 }
 // const StyledNextArrow = styled.div`
 //     position: absolute;
@@ -90,9 +91,12 @@ const settings = {
 };
 
 export const ItemSlider = (props: TProps) => {
-    const { items = [] } = props;
+    const {
+        items = [],
+        wrapperStyle = {}
+    } = props;
     return (
-        <div style={{padding: '0px 25px'}}>
+        <div style={{ padding: '0px 25px', ...wrapperStyle }}>
             <Slider
                 {...settings}
             >

@@ -48,7 +48,7 @@ export const HeaderMobileTemplate = () => {
     const [
         menuOpened,
         setMenuOpened
-    ] = useState<boolean>(true)
+    ] = useState<boolean>(false)
     const [categories] = useState(menuCategories())
     return (
         <>
@@ -76,7 +76,7 @@ export const HeaderMobileTemplate = () => {
                 </TopRow>
                 {categories?.map((category: any) => {
                     return (
-                        <HeaderMenuItem category={category} />
+                        <HeaderMenuItem category={category} key={category?.id} />
                     )
                 })}
                 <BottomRow>
